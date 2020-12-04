@@ -3,8 +3,8 @@ html {
   --primaryColor: rgb(81, 187, 254);
   --fontColor: #757761;
   --secondColor: #f6f6f4;
-  --greenify: linear-gradient(45deg, #00bb88 0%, #33ee55 100%);
-  --redify: red;
+  --greenify: #59cd90;
+  --redify: #e63946;
 }
 
 * {
@@ -164,7 +164,7 @@ a:hover {
 
 /* Hero Section */
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(81, 187, 254, 0.7)),
+  background-image: linear-gradient(rgb(1, 48, 78, 0.9), rgb(1, 48, 78, 0.5)),
     url("hero1.jpg");
   padding: 123px 0;
   background-position: center;
@@ -189,16 +189,16 @@ a:hover {
   margin-bottom: 24px;
 }
 
+.hero-title span {
+  color: var(--greenify);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
 .hero-desc {
   font-size: 1.5rem;
   margin-bottom: 24px;
   color: #fff;
-}
-
-.hero-desc span {
-  color: var(--redify);
-  text-transform: uppercase;
-  font-weight: bold;
 }
 
 /* About section */
@@ -209,22 +209,32 @@ a:hover {
 .about-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  display: flex;
   justify-content: center;
   align-items: center;
-  /* height: 90%; */
-  width: 100%;
+  margin-top: 1rem;
 }
 
 .about-img {
-  /* background-image: url("about.jpg"); */
-  max-width: 100%;
-  /* height: 400px; */
-  margin: 1rem;
+  width: 100%;
+  height: auto;
+  /* object-fit: cover; */
+  opacity: 0.5;
+}
+
+/* Set overlay on about-img */
+.okay {
+  background: #000;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
 }
 
 .about-content {
-  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 1.8rem;
   font-weight: 500;
 }
 
@@ -240,10 +250,6 @@ a:hover {
 }
 
 @media screen and (max-width: 480px) {
-  .about-container {
-    text-align: center;
-  }
-
   .h1-title {
     font-size: 2.1rem;
   }
