@@ -46,3 +46,12 @@ for (let i = 0; i < listItems.length; i++) {
     toggleProjects(listItems[i].dataset.class);
   });
 }
+
+// Footer section for current year
+const copyrightDate = () => {
+  let year = new Date().getYear();
+  if (year < 1900) year += 1900;
+  document.getElementById("currentYear").innerHTML = year;
+};
+
+copyrightDate();

@@ -1,0 +1,16 @@
+{
+  "name": "TechEsan",
+  "version": "1.0.0",
+  "description": "A company website",
+  "main": "index.js",
+  "repository": "https://github.com/ehimare369/techesan",
+  "author": "Ehimare Okosun <ehimare369@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
