@@ -93,6 +93,10 @@ a:hover {
   font-size: 0.9rem;
 }
 
+.hide-contact {
+  display: none;
+}
+
 .button {
   color: #fff;
   text-decoration: none;
@@ -140,6 +144,17 @@ a:hover {
 
   .navbar-links {
     text-align: center;
+    background: inherit;
+    color: #fff;
+  }
+
+  .hide-contact {
+    display: block;
+    color: #fff;
+    background: var(--redify);
+    padding: 2px;
+    border-radius: 6px;
+    border: 1px solid #fff;
   }
 
   .navbar-toggle {
@@ -436,6 +451,7 @@ a:hover {
 #testimonial cite {
   margin-top: 15px;
   color: var(--primaryColor);
+  text-align: center;
 }
 
 @media screen and (max-width: 900px) {
