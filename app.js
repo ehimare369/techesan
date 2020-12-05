@@ -10,7 +10,7 @@ const toggleNavbar = () => {
   navbarMenu.classList.toggle("navbar-active");
 };
 
-// Calling the fucntion after click event occurs
+// Calling the function after click event occurs
 mobileMenu.addEventListener("click", toggleNavbar);
 
 // Projects Filter

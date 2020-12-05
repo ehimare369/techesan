@@ -169,7 +169,7 @@ a:hover {
     display: block;
   }
 
-  /* Hidding the nav menu on mobile by default */
+  /* Hiding the nav menu on mobile by default */
   .navbar-active {
     right: 0;
     display: inherit;
