@@ -2,7 +2,7 @@
   "name": "TechEsan",
   "version": "1.0.0",
   "description": "A company website",
-  "main": "index.js",
+  "main": "server.js",
   "repository": "https://github.com/ehimare369/techesan",
   "author": "Ehimare Okosun <ehimare369@gmail.com>",
   "license": "MIT",
@@ -12,5 +12,8 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.6"
+  },
+  "scripts": {
+    "dev": "nodemon server.js"
   }
 }

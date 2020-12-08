@@ -188,7 +188,7 @@ a:hover {
 /* Hero Section */
 .hero-image {
   background-image: linear-gradient(rgb(1, 48, 78, 0.9), rgb(1, 48, 78, 0.5)),
-    url("hero1.jpg");
+    url("../images/hero1.jpg");
   padding: 123px 0;
   background-position: center;
   background-size: cover;
